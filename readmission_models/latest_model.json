@@ -1,0 +1,5 @@
+{
+  "model_name": "readmission_model_ExtraTrees_v1.joblib",
+  "threshold": 0.1253,
+  "model_card_path": "readmission_models\\model_card_ExtraTrees_v1_20260819_155454.json"
+}

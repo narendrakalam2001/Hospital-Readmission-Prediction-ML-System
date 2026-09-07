@@ -1,0 +1,12 @@
+Hospital Readmission Prediction
+Diabetes 130-US Hospitals Dataset
+============================================================
+
+Original rows: 101,766
+Original columns: 51
+Sample unique patients: 5,000
+Sample encounters: 7,217
+
+Target definition:
+readmitted_30_days = 1 when readmitted == '<30'
+readmitted_30_days = 0 when readmitted == '>30' or 'NO'

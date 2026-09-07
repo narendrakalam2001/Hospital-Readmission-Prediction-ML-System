@@ -1,0 +1,68 @@
+# ============================================================
+# .GITIGNORE — Hospital Readmission ML System
+# Tuned for Render (API) + Streamlit Cloud (Dashboard) deployment:
+# both services load the trained model + artifacts straight from
+# the GitHub repo at startup (no training step in the cloud), so
+# readmission_models/ and the sample dataset MUST be pushed.
+# ============================================================
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environments ──────────────────────────────────────
+venv/
+env/
+.env
+.venv/
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Model artifacts — PUSH THESE (Render + Streamlit need them) ─
+# readmission_models/ is NOT ignored: the joblib model, latest_model.json
+# registry, model cards, challenger_log.json, model_experiment_results.csv,
+# monitor_scores.csv, and feature_drift_report.csv are all read directly
+# by the API and the dashboard on Render/Streamlit Cloud at runtime.
+# (No rule needed here — simply not excluding the folder means it's pushed.)
+
+# ── Data ──────────────────────────────────────────────────────
+# Full raw dataset — never push (≈19 MB; download separately, see README)
+data/diabetic_data.csv
+
+# Sample dataset — PUSH THIS (small, lets reviewers/CI see data shape
+# without downloading the full Kaggle/UCI file)
+!data/sample_dataset_info.txt
+!data/sample_diabetes_readmission_dataset.csv
+# ── Logs ──────────────────────────────────────────────────────
+# Runtime-generated prediction audit log — don't push, but keep the
+# folder itself so the app doesn't fail writing to a missing directory
+!logs/*.csv
+logs/*.log
+!logs/.gitkeep
+
+# ── MLflow ────────────────────────────────────────────────────
+mlruns/
+mlflow.db
+mlartifacts/
+
+# ── Pytest / coverage ─────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp

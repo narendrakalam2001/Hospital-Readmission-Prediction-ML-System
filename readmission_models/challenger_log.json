@@ -1,0 +1,97 @@
+[
+  {
+    "decision": "PROMOTED",
+    "reason": "No existing champion \u2014 first model auto-promoted",
+    "challenger_name": "LogisticRegression",
+    "challenger_f1": 0.2621,
+    "challenger_roc_auc": 0.632,
+    "champion_name": null,
+    "champion_f1": null,
+    "evaluated_at": "2026-08-09 10:06:51"
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: ROC-AUC 0.6520 < 0.68",
+    "evaluated_at": "2026-08-19 15:41:04",
+    "challenger_name": "LogisticRegression",
+    "challenger_f1": 0.2687,
+    "challenger_roc_auc": 0.652,
+    "challenger_gap": 0.0065,
+    "champion_name": "LogisticRegression",
+    "champion_f1": 0.2621,
+    "champion_roc_auc": 0.632,
+    "gates": {
+      "f1_improvement_passed": true,
+      "roc_auc_passed": false,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "PROMOTED",
+    "reason": "Challenger beats champion: F1 0.2621 \u2192 0.2702 (+0.0081)",
+    "evaluated_at": "2026-08-19 15:54:55",
+    "challenger_name": "ExtraTrees",
+    "challenger_f1": 0.2702,
+    "challenger_roc_auc": 0.6513,
+    "challenger_gap": 0.0092,
+    "champion_name": "LogisticRegression",
+    "champion_f1": 0.2621,
+    "champion_roc_auc": 0.632,
+    "gates": {
+      "f1_improvement_passed": true,
+      "roc_auc_passed": true,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: F1 improvement -0.0000 < 0.005",
+    "evaluated_at": "2026-08-19 22:19:46",
+    "challenger_name": "ExtraTrees",
+    "challenger_f1": 0.2702,
+    "challenger_roc_auc": 0.6513,
+    "challenger_gap": 0.0092,
+    "champion_name": "ExtraTrees",
+    "champion_f1": 0.2702,
+    "champion_roc_auc": 0.6513,
+    "gates": {
+      "f1_improvement_passed": false,
+      "roc_auc_passed": true,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: F1 improvement -0.0000 < 0.005",
+    "evaluated_at": "2026-08-20 12:37:31",
+    "challenger_name": "ExtraTrees",
+    "challenger_f1": 0.2702,
+    "challenger_roc_auc": 0.6513,
+    "challenger_gap": 0.0092,
+    "champion_name": "ExtraTrees",
+    "champion_f1": 0.2702,
+    "champion_roc_auc": 0.6513,
+    "gates": {
+      "f1_improvement_passed": false,
+      "roc_auc_passed": true,
+      "gap_passed": true
+    }
+  },
+  {
+    "decision": "REJECTED",
+    "reason": "Gates failed: F1 improvement -0.0000 < 0.005",
+    "evaluated_at": "2026-08-20 13:20:51",
+    "challenger_name": "ExtraTrees",
+    "challenger_f1": 0.2702,
+    "challenger_roc_auc": 0.6513,
+    "challenger_gap": 0.0092,
+    "champion_name": "ExtraTrees",
+    "champion_f1": 0.2702,
+    "champion_roc_auc": 0.6513,
+    "gates": {
+      "f1_improvement_passed": false,
+      "roc_auc_passed": true,
+      "gap_passed": true
+    }
+  }
+]
