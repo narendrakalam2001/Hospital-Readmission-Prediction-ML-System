@@ -62,8 +62,8 @@ This mirrors how real hospital quality & utilization-management teams operate un
 
 | Service | URL |
 |---|---|
-| 🚀 **FastAPI (Swagger UI)** | [https://hospital-readmission-risk-mlops.onrender.com/docs](https://hospital-readmission-risk-mlops.onrender.com/docs) |
-| 📊 **Monitoring Dashboard** | [https://hospital-readmission-risk-mlops.streamlit.app](https://hospital-readmission-risk-mlops.streamlit.app) |
+| 🚀 **FastAPI (Swagger UI)** | [https://hospital-readmission-prediction-ml-system-avgw.onrender.com/docs](https://hospital-readmission-prediction-ml-system-avgw.onrender.com/docs) |
+| 📊 **Monitoring Dashboard** | [https://hospital-readmission-prediction-ml-system.streamlit.app](https://hospital-readmission-prediction-ml-system.streamlit.app) |
 | 📓 **EDA Notebook** | [notebooks/hospital_readmission_eda.ipynb](notebooks/hospital_readmission_eda.ipynb) |
 
 > ⚠️ Render free tier: first request may take 30–60 seconds (cold start).
